@@ -1,0 +1,17 @@
+{
+  "name": "javascript-calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watch *.test.js"
+  },
+    "devDependencies": {
+    "jest": "22.1.4",
+    "eslint": "4.16.0",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-react": "7.6.1"
+  },
+  "license": "ISC"
+}

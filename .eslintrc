@@ -1,0 +1,12 @@
+{
+    "extends": "airbnb",
+    "rules": {
+      "semi": 0
+    },
+    "env": [
+      "jest",
+      "node",
+      "browser",
+      "es6"
+    ]
+}
