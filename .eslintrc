@@ -3,10 +3,13 @@
     "rules": {
       "semi": 0
     },
-    "env": [
-      "jest",
-      "node",
-      "browser",
-      "es6"
-    ]
+    "parserOptions": {
+      "ecmaVersion": 6
+    },
+    "env": {
+      "jest": true,
+      "node": true,
+      "browser": true,
+      "es6": true
+    }
 }

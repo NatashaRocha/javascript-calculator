@@ -1,5 +1,6 @@
 const Calculator = require('./calculatorAPI')
-const c = new Calculator
+
+const c = new Calculator()
 
 describe('calculator API', () => {
   it('can chain mathematical operations properly', () => {
@@ -36,5 +37,5 @@ describe('calculator API', () => {
     c.result = 10
     c.reset()
     expect(c.result).toBe(0)
-})
+  })
 })
