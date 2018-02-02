@@ -1,4 +1,4 @@
-class Calculator {
+class CalculatorAPI {
   constructor() {
     this.result = 0
   }
@@ -29,4 +29,4 @@ class Calculator {
   }
 }
 
-module.exports = Calculator
+module.exports = CalculatorAPI
