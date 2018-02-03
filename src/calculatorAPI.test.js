@@ -1,41 +1,42 @@
 const Calculator = require('./calculatorAPI')
 
-const c = new Calculator()
+const calculator = new Calculator()
 
 describe('calculator API', () => {
+  beforeEach(() => {
+    calculator.reset()
+  })
+
   it('can chain mathematical operations properly', () => {
-    c.result = 0
-    c.add(2).subtract(3).multiply(2).divide(2)
-    expect(c.result).toBe(-1)
+    calculator.add(2).subtract(3).multiply(4).divide(2)
+    expect(calculator.result).toBe(-2)
   })
 
   it('can divide two numbers', () => {
-    c.result = 100
-    c.divide(20)
-    expect(c.result).toBe(5)
+    calculator.result = 100
+    calculator.divide(20)
+    expect(calculator.result).toBe(5)
   })
 
   it('can multiply two numbers', () => {
-    c.result = 10
-    c.multiply(5)
-    expect(c.result).toBe(50)
+    calculator.result = 10
+    calculator.multiply(5)
+    expect(calculator.result).toBe(50)
   })
 
   it('can subtract two numbers', () => {
-    c.result = 10
-    c.subtract(2)
-    expect(c.result).toBe(8)
+    calculator.subtract(2)
+    expect(calculator.result).toBe(-2)
   })
 
   it('can add two numbers', () => {
-    c.result = 0
-    c.add(2)
-    expect(c.result).toBe(2)
+    calculator.add(2)
+    expect(calculator.result).toBe(2)
   })
 
   it('can clear result when reset is called', () => {
-    c.result = 10
-    c.reset()
-    expect(c.result).toBe(0)
+    calculator.result = 10
+    calculator.reset()
+    expect(calculator.result).toBe(0)
   })
 })
