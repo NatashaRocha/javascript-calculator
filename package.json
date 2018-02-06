@@ -2,7 +2,7 @@
   "name": "javascript-calculator",
   "main": "index.js",
   "jest": {
-    "collectCoverage": true,
+    "collectCoverage": false,
     "coverageDirectory": "./coverage"
   },
   "babel": {
